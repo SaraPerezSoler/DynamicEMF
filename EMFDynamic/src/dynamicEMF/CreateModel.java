@@ -23,7 +23,7 @@ import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
  *  - org.eclipse.emf.ecore.xmi 
  *  - org.eclipse.emf.ecore
  */
-public class InstantiateModel {
+public class CreateModel {
 
 	public static void main(String[] args) {
 		
