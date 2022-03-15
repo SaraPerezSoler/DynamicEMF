@@ -10,10 +10,11 @@ This package contains four classes, each of them with a main method.
 * CreateModel.java: to create a model using emf libraries in java. It needs the meta-model created when execute CreateMetamodel.java.
 * ReadMetamodel.java: to read and print a meta-model. It needs the meta-model created when execute CreateMetamodel.java. 
 * ReadModel.java: to read and print a model. It needs the model created when execute CreateModel.java.  
-<center>
+
+<div align="center">
 | ![image](EMFDynamic/models/StoreMM.svg) |
 |:--:|
 | <b>Fig.1 - UML Class diagram of the metamodel 
   created in CreateMetaModel.java </b>|
-</center>
+</div>
 
