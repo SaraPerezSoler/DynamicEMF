@@ -1,0 +1,4 @@
+
+EMFDynamic/.settings/*
+*.class
+EMFDynamic/target/*

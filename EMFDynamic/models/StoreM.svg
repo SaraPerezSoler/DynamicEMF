@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="166px" preserveAspectRatio="none" style="width:297px;height:166px;background:#FFFFFF;" version="1.1" viewBox="0 0 297 166" width="297px" zoomAndPan="magnify"><defs/><g><g id="elem_Store0"><rect fill="#F1F1F1" height="44.5938" style="stroke:#181818;stroke-width:0.5;" width="131" x="73.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="116.5" y="21.9951">:Store</text><line style="stroke:#181818;stroke-width:0.5;" x1="74.5" x2="203.5" y1="27.2969" y2="27.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="79.5" y="44.292">name = MyStore</text></g><g id="elem_Item0"><rect fill="#F1F1F1" height="60.8906" style="stroke:#181818;stroke-width:0.5;" width="108" x="7" y="99"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="41.5" y="113.9951">:Item</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="114" y1="119.2969" y2="119.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="13" y="136.292">name = Book</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="13" y="152.5889">price = 10.0</text></g><g id="elem_Item1"><rect fill="#F1F1F1" height="60.8906" style="stroke:#181818;stroke-width:0.5;" width="145" x="145.5" y="99"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="198.5" y="113.9951">:Item</text><line style="stroke:#181818;stroke-width:0.5;" x1="146.5" x2="289.5" y1="119.2969" y2="119.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="151.5" y="136.292">name = Pencil box</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="151.5" y="152.5889">price = 2.5</text></g><!--MD5=[db879420ee99a5a6639ada8087a752d6]
+reverse link Store0 to Item0--><g id="link_Store0_Item0"><path codeLine="19" d="M113.581,62.4363 C104.3175,74.0755 93.8853,87.1826 84.77,98.6351 " fill="none" id="Store0-backto-Item0" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="121.689,52.249,114.8227,54.4523,114.2157,61.6378,121.0819,59.4345,121.689,52.249" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="41" x="111" y="80.0669">:items</text></g><!--MD5=[28b21720bef76392b536b087a3578d8e]
+reverse link Store0 to Item1--><g id="link_Store0_Item1"><path codeLine="20" d="M164.745,62.4363 C174.127,74.0755 184.693,87.1826 193.925,98.6351 " fill="none" id="Store0-backto-Item1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="156.533,52.249,157.1842,59.4306,164.0639,61.5917,163.4127,54.4101,156.533,52.249" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="41" x="182" y="80.0669">:items</text></g><!--MD5=[7873348729dea2d03a983e8a82246a9c]
+@startuml
+skinparam object {
+BackgroundColor<<???>> #FFFFFF
+BorderColor<<???>> #BDBDBD
+}
+skinparam nodeSep 30 
+skinparam rankSep 30 
+hide empty members   
+object ":Store" as Store0 
+Store0 : name = MyStore
+
+object ":Item" as Item0 
+Item0 : name = Book
+Item0 : price = 10.0
+
+object ":Item" as Item1 
+Item1 : name = Pencil box
+Item1 : price = 2.5
+
+Store0 *- - Item0 :":items"
+Store0 *- - Item1 :":items"
+@enduml
+
+PlantUML version 1.2022.3beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
