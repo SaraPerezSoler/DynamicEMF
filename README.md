@@ -18,3 +18,9 @@ This package contains four classes, each of them with a main method.
   created in CreateMetaModel.java </b>|
 </div>
 
+<p align = "center">
+<img src = "EMFDynamic/models/StoreMM.svg">
+</p>
+<p align = "center">
+Fig.1 - UML Class diagram of the metamodel created in CreateMetaModel.java
+</p>
