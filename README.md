@@ -13,6 +13,7 @@ This package contains four classes, each of them with a main method.
 
 | ![image](EMFDynamic/models/StoreMM.svg) |
 |:--:|
-| <b>Fig.1 - UML Class diagram of the metamodel created in CreateMetaModel.java </b>|
+| <b>Fig.1 - UML Class diagram of the metamodel 
+  created in CreateMetaModel.java </b>|
 
 
