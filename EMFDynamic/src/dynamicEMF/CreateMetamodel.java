@@ -97,7 +97,7 @@ public class CreateMetamodel {
 		// First we need to create and configure a ResourseSet.
 		ResourceSet set = new ResourceSetImpl();
 		//In the configuration we are going to registry the XMLResourceFactory for the ecore extension
-		//That means all files (or resources) with extension ecore are going to be serialize and deserialize (save and read) in a XML format 
+		//That means all files (or resources) with extension ecore are going to be serialize and deserialize (save and read) in a XMI format 
 		set.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", new XMIResourceFactoryImpl());
 		
 		//Using the ResourceSet, we create the resource in a concrete path (the folder of the path must be created before). 

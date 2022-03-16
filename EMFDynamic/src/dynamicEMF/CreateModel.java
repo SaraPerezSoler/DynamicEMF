@@ -33,7 +33,7 @@ public class CreateModel {
 		// In the configuration we are going to registry the XMLResourceFactory for the
 		// ecore extension
 		// That means all files (or resources) with extension ecore are going to be
-		// serialize and deserialize (save and read) in a XML format
+		// serialize and deserialize (save and read) in a XMI format
 		set.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", new XMIResourceFactoryImpl());
 
 		// Using the ResourceSet, we open a resource in a concrete path (the file must
@@ -90,7 +90,7 @@ public class CreateModel {
 		/** So far the model has been created, now we are going to save it in a xmi file (using a resource in EMF)                   */            
 		/*****************************************************************************************************************************/
 		
-		//We use the same resourceSet that we create before, but need to add the configuration to serialize and deserialize (save and read) xmi files in a XML format
+		//We use the same resourceSet that we create before, but need to add the configuration to serialize and deserialize (save and read) xmi files in a XMI format
 		set.getResourceFactoryRegistry().getExtensionToFactoryMap().put("xmi", new XMIResourceFactoryImpl());
 		//Then we create the resource
 		Resource modelResource = set.createResource(URI.createURI("./models/MyStore.xmi"));

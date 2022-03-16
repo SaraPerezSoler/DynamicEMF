@@ -28,10 +28,10 @@ public class ReadMetamodel {
 		// To read a metamodel, we need to open a ecore file (using a resource in EMF)
 		// For it we need to create an configure a ResourceSet
 		ResourceSet set = new ResourceSetImpl();
-		// In the configuration we are going to registry the XMLResourceFactory for the
+		// In the configuration we are going to registry the XMIResourceFactory for the
 		// ecore extesion
 		// That means all files (or resources) with extension ecore are going to be
-		// serialize and deserialize (save and read) in a XML format
+		// serialize and deserialize (save and read) in a XMI format
 		set.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", new XMIResourceFactoryImpl());
 
 		// Using the ResourceSet, we open a resource in a concrete path (the file must

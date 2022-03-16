@@ -29,7 +29,7 @@ public class ReadModel {
 		// in EMF) and registry the EPackage
 		// For it we need to create an configure a ResourceSet
 		ResourceSet set = new ResourceSetImpl();
-		// In the configuration we are going to registry the XMLResourceFactory for the
+		// In the configuration we are going to registry the XMIResourceFactory for the
 		// ecore extension
 		set.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", new XMIResourceFactoryImpl());
 
@@ -48,7 +48,7 @@ public class ReadModel {
 
 		// Then we can open the model file (using a resource in EMF)
 		// We use the same resourceSet that we create before, but need to add the
-		// configuration to serialize and deserialize (save and read) xmi files in a XML
+		// configuration to serialize and deserialize (save and read) xmi files in a XMI
 		// format
 		set.getResourceFactoryRegistry().getExtensionToFactoryMap().put("xmi", new XMIResourceFactoryImpl());
 		// Then we open the resource
